@@ -1,7 +1,12 @@
+import {appleImg} from '../utils'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <header>
+      <nav>
+        <img src={appleImg}/>
+      </nav>
+    </header>
   )
 }
 
