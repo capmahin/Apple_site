@@ -1,4 +1,5 @@
-import {appleImg, bagImg, searchImg} from '../utils'
+import {appleImg, bagImg, searchImg} from '../utils';
+import {navLists} from '../constants';
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
         height={18}/>
 
         <div className='flex flex-1 justify-center max-sm:hidden'>
-          {['Phones', 'Macbooks','Tablets'].map((nav)=>(
+          {navLists.map((nav)=>(
             <div key={nav}>
               {nav}
             </div>
