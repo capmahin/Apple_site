@@ -19,7 +19,12 @@ const Hero = () => {
  }
 
  useEffect(()=>{
-   window.addEventListener('resize',handleVideoSrcSet)
+   window.addEventListener('resize',handleVideoSrcSet);
+   return () =>{
+      window.removeEventListener('resize',
+         handleVideoSrcSet
+      )
+   }
  },[])
 
   useGSAP(()=>{
