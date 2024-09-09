@@ -1,9 +1,11 @@
 
 const VideoCarousel = () => {
   return (
-    <div>
-      
+    <>
+    <div className="flex items-center">
+
     </div>
+    </>
   )
 }
 
