@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import { watchImg } from './../utils/index';
 
 const Highlights = () => {
 
@@ -15,7 +16,10 @@ const Highlights = () => {
               Get the highlights.
             </h1>
             <div className="flex flex-wrap items-end gap-5">
-                <p></p>
+                <p className="link">Watch the film
+
+                  <img src={watchImg} alt="watch" />
+                </p>
             </div>
            </div>
         </div>
