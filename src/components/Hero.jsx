@@ -50,7 +50,9 @@ const Hero = () => {
             id="cta"
             className="flex flex-col items-center opacity-0
             translate-y-20">
-
+                  <a href="#highlights" className="btn">
+                    Buy
+                  </a>
             </div>
          </div>
       </section>
