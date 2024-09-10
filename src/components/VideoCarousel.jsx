@@ -49,6 +49,8 @@ const VideoCarousel = () => {
     }
   },[startPlay,videoId,isPlaying,loadedData])
 
+  const handleLoadedMetadata = (i,e)=> setLoadedData((pre)=> [...pre, e])
+
   useEffect(()=>{
     const currentProgress = 0;
     let span = videoSpanRef.current;
