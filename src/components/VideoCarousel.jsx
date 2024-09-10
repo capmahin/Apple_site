@@ -1,6 +1,25 @@
+import { useEffect, useRef } from "react"
 import { highlightsSlides } from "../constants"
+import { useState } from "react";
 
 const VideoCarousel = () => {
+  const videoRef = useRef([]);
+  const videoSpanRef = useRef([]);
+  const videoDivRef = useRef([]);
+
+  const [video, setVideo] = useState({
+    isEnd:false,
+    startPlay:false,
+    videoId: false,
+    isLastVideo: false,
+    isPlaying:false,
+  })
+
+  useEffect(()=>{
+    
+  },[videoId,startPlay])
+
+  const {isEnd, isLastVideo, startPlay,videoId,isPlaying}= video;
   return (
     <>
     <div className="flex items-center">
