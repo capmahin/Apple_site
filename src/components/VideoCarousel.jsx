@@ -52,7 +52,7 @@ const VideoCarousel = () => {
   const handleLoadedMetadata = (i,e)=> setLoadedData((pre)=> [...pre, e])
 
   useEffect(()=>{
-    const currentProgress = 0;
+    let currentProgress = 0;
     let span = videoSpanRef.current;
 
     if(span[videoId]){
@@ -61,7 +61,11 @@ const VideoCarousel = () => {
 
       let anim = gsap.to(span[videoId],{
         onUpdate:()=>{
-            const progress = Math.ceil(anim.progress()*100)
+            const progress = Math.ceil(anim.progress()*100);
+
+            if(progress != currentProgress){
+                currentProgress = progress;
+            }
         },
 
         onComplete:()=>{
