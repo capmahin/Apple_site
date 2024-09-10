@@ -93,7 +93,9 @@ const VideoCarousel = () => {
            {videoRef.current.map((_, i)=>(
             <span 
             key={i}
-            ref={(el)=> (videoDivRef.current[i]=el)}>
+            ref={(el)=> (videoDivRef.current[i]=el)}
+            className="mx-2 w-3 h-3 bg-gray-200 rounded-full
+            relative cursor-pointer">
 
             </span>
            ))}
