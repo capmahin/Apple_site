@@ -73,6 +73,11 @@ const VideoCarousel = () => {
                   ?'10vw'
                   :'4vw'
                 })
+
+                gsap.to(span[videoId],{
+                  width:`${currentProgress}%`,
+                  backgroundColor:'white'
+                })
             }
         },
 
