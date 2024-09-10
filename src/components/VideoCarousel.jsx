@@ -53,11 +53,14 @@ const VideoCarousel = () => {
 const handleProcess = (type,i)=>{
   switch (type) {
     case 'video-end':
-      setVideo((prevVideo)=>({...prevVideo,isEnd:true,
+      setVideo((pre)=>({...pre,isEnd:true,
         videoId:i + 1
       }))
       
       break;
+      case 'video-last':
+        setVideo((pre)=> ({...pre,isLastVideo:true}))
+        break;
   
     default:
       break;
