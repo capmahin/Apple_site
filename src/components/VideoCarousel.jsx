@@ -121,6 +121,9 @@ const handleProcess = (type,i)=>{
                   ...prevVideo, isPlaying:true
                 }))
                }}
+               onLoadedMetadata={(e)=> 
+                handleLoadedMetadata(i,e)
+               }
                >
                 <source src={list.video} type="video/mp4"/>
                </video>
