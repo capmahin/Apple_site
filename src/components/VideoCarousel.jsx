@@ -28,6 +28,13 @@ const VideoCarousel = () => {
         scrollTrigger:{
           trigger:'#video',
           toggleActions:'restart none none none'
+        },
+        onComplete:()=>{
+          setVideo((pre)=>({
+            ...pre,
+            startPlay:true,
+            isPlaying:true,
+          }))
         }
       })
   },[isEnd,videoId])
