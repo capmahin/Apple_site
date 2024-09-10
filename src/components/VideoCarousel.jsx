@@ -26,7 +26,7 @@ const VideoCarousel = () => {
       if(!isPlaying){
         videoRef.current[videoId].pause();
       }else{
-        
+        startPlay && videoRef.current[videoId].play()
       }
     }
   },[startPlay,videoId,isPlaying,loadedData])
