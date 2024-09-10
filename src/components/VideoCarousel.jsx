@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react"
 import { highlightsSlides } from "../constants"
 import { useState } from "react";
 import gsap from "gsap";
-import { pause } from '/assets/images/pause.svg';
+
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -88,20 +88,24 @@ const VideoCarousel = () => {
 
     <div className="relative flex-center mt-10">
 
-      <div className="flex-center py-5 px-7 bg-gray-300
-      backdrop-blur rounded-full">
-           {videoRef.current.map((_, i)=>(
-            <span 
-            key={i}
-            ref={(el)=> (videoDivRef.current[i]=el)}
-            className="mx-2 w-3 h-3 bg-gray-200 rounded-full
-            relative cursor-pointer">
-                <span className="absolute h-full w-full rounded-full" ref={(el)=> (videoSpanRef.current[i]=el)}>
-
-                </span>
+    <div className="flex-center py-5 px-7 bg-gray-300 backdrop-blur rounded-full">
+          {videoRef.current.map((_, i) => (
+            <span
+              key={i}
+              className="mx-2 w-3 h-3 bg-gray-200 rounded-full relative cursor-pointer"
+              ref={(el) => (videoDivRef.current[i] = el)}
+            >
+              <span
+                className="absolute h-full w-full rounded-full"
+                ref={(el) => (videoSpanRef.current[i] = el)}
+              />
             </span>
-           ))}
-      </div>
+          ))}
+        </div>
+
+      <button className="control-btn">
+
+      </button>
     </div>
     </>
   )
