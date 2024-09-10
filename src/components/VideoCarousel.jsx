@@ -82,7 +82,14 @@ const VideoCarousel = () => {
         },
 
         onComplete:()=>{
-
+            if(isPlaying){
+              gsap.to(videoDivRef.current[videoId],{
+                width:'12px'
+              })
+              gsap.to(span[videoId],{
+                backgroundColor:'#afafaf'
+              })
+            }
         }
       })
     }
