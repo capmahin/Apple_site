@@ -26,7 +26,7 @@ const VideoCarousel = () => {
       if(!isPlaying){
         videoRef.current[videoId].pause();
       }else{
-        startPlay && videoRef.current[videoId].play()
+        startPlay && videoRef.current[videoId].play();
       }
     }
   },[startPlay,videoId,isPlaying,loadedData])
@@ -64,6 +64,12 @@ const VideoCarousel = () => {
                playsInline={true}
                preload="auto"
                muted
+               ref={(el)=>(videoRef.current[i]=el)}
+               onPlay={()=>{
+                setVideo((prevVideo)=>({
+                  ...prevVideo, isPlaying:true
+                }))
+               }}
                >
                 <source src={list.video} type="video/mp4"/>
                </video>
