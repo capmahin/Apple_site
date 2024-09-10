@@ -74,7 +74,7 @@ const handleProcess = (type,i)=>{
             break;
   
     default:
-      break;
+      return video;
   }
 }
 
