@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react"
 import { highlightsSlides } from "../constants"
 import { useState } from "react";
+import gsap from "gsap";
+import { pause } from '/assets/images/pause.svg';
 
 const VideoCarousel = () => {
   const videoRef = useRef([]);
@@ -10,10 +12,24 @@ const VideoCarousel = () => {
   const [video, setVideo] = useState({
     isEnd:false,
     startPlay:false,
-    videoId: false,
+    videoId: 0,
     isLastVideo: false,
     isPlaying:false,
   })
+
+  const [loadedData,setLoadedData] = useState([]);
+
+  const {isEnd,isLastVideo,startPlay,videoId,isPlaying}= video;
+
+  useEffect(()=>{
+    if(loadedData.length>3){
+      if(!isPlaying){
+        videoRef.current[videoId].pause();
+      }else{
+        
+      }
+    }
+  },[startPlay,videoId,isPlaying,loadedData])
 
   useEffect(()=>{
     const currentProgress = 0;
@@ -21,10 +37,19 @@ const VideoCarousel = () => {
 
     if(span[videoId]){
       //animate the progress of the video
+      let anim = gsap.to(span[videoId],{
+        onUpdate:()=>{
+
+        },
+
+        onComplete:()=>{
+
+        }
+      })
     }
   },[videoId,startPlay])
 
-  const {isEnd, isLastVideo, startPlay,videoId,isPlaying}= video;
+  
   return (
     <>
     <div className="flex items-center">
