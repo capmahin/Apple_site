@@ -16,7 +16,12 @@ const VideoCarousel = () => {
   })
 
   useEffect(()=>{
-    
+    const currentProgress = 0;
+    let span = videoSpanRef.current;
+
+    if(span[videoId]){
+      //animate the progress of the video
+    }
   },[videoId,startPlay])
 
   const {isEnd, isLastVideo, startPlay,videoId,isPlaying}= video;
