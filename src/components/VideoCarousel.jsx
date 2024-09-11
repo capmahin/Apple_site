@@ -97,19 +97,19 @@ const VideoCarousel = () => {
         anim.restart();
       }
      
-
+      const animUpdate = ()=>{
+        anim.progress(videoRef.current[videoId]/
+          highlightsSlides.videoDuration
+        )
+       }
+       if(isPlaying){
+        gsap.ticker.add(animUpdate)
+       }else{
+        gsap.ticker.remove(animUpdate)
+       }
 
     }
-    const animUpdate = ()=>{
-      anim.progress(videoRef.current[videoId]/
-        highlightsSlides.videoDuration
-      )
-     }
-     if(isPlaying){
-      gsap.ticker.add(animUpdate)
-     }else{
-      gsap.ticker.remove(animUpdate)
-     }
+    
   },[videoId,startPlay])
 
 const handleProcess = (type,i)=>{
