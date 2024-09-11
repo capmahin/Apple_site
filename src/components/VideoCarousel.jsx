@@ -139,6 +139,10 @@ const handleProcess = (type,i)=>{
             setVideo((pre)=> ({...pre,isPlaying:!pre.isPlaying
             }))
             break;
+          case 'pause':
+            setVideo((pre)=> ({...pre,isPlaying:!pre.isPlaying
+            }))
+            break;
   
     default:
       return video;
