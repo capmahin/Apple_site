@@ -92,6 +92,10 @@ const VideoCarousel = () => {
             }
         }
       })
+
+      if(videoId === 0){
+        anim.restart();
+      }
     }
   },[videoId,startPlay])
 
