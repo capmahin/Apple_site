@@ -2,8 +2,10 @@
 
 const Model = () => {
   return (
-    <section>
-        
+    <section className="common-padding">
+       <div className="screen-max-width">
+
+       </div>
     </section>
   )
 }
