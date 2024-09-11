@@ -167,6 +167,9 @@ const handleProcess = (type,i)=>{
                playsInline={true}
                preload="auto"
                muted
+               className={`${
+                list.id === 2
+               }`}
                ref={(el)=>(videoRef.current[i]=el)}
                onEnded={()=>
                 i !== 3
