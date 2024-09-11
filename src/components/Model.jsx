@@ -2,7 +2,9 @@
 
 const Model = () => {
   return (
-    <div>Model</div>
+    <section>
+        
+    </section>
   )
 }
 
