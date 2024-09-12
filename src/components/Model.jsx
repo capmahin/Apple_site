@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import ModelView from "./ModelView"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import {yellowImg} from '../utils'
 
 
@@ -14,6 +14,8 @@ const Model = () => {
   })
 
   //camera control for the model view
+  const cameraControlSmall = useRef();
+  const cameraControlLarge = useRef();
 
   useGSAP(()=>{
       gsap.to('#heading',{
