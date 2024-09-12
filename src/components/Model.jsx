@@ -25,6 +25,7 @@ const Model = () => {
   //rotation
 
   const [smallRotation, setSmallRotation] = useState(0);
+  const [largeRotation, setLargeRotation] = useState(0);
 
   useGSAP(()=>{
       gsap.to('#heading',{
@@ -41,7 +42,15 @@ const Model = () => {
           <div className="flex flex-col items-center mt-5">
               <div className="w-full h-[75vh] md:h-[90vh]
               overflow-hidden relative">
-                  <ModelView/>
+                  <ModelView
+                  index={1}
+                  groupRef={small}
+                  gsapType="view1"
+                  controlRef={cameraControlSmall}
+                  setRotationState={setSmallRotation}
+                  item={model}
+                  size={size}
+                  />
               </div>
           </div>
        </div>
