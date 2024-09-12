@@ -4,6 +4,7 @@ import ModelView from "./ModelView"
 import { useRef, useState } from "react"
 import {yellowImg} from '../utils';
  import * as THREE from 'three';
+import { Canvas } from "@react-three/fiber";
 
 
 const Model = () => {
@@ -60,6 +61,11 @@ const Model = () => {
                   item={model}
                   size={size}
                   />
+
+                  <Canvas>
+
+                    <View.Port/>
+                  </Canvas>
               </div>
           </div>
        </div>
