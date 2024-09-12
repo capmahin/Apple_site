@@ -84,6 +84,11 @@ const Model = () => {
                   <p className="text-sm font-light text-center mb-5">
                     {model.title}
                   </p>
+                  <div className="flex-center">
+                    <ul className="color-container">
+
+                    </ul>
+                  </div>
               </div>
           </div>
        </div>
