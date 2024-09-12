@@ -81,7 +81,7 @@ const Model = () => {
               </div>
 
               <div className="mx-auto w-full">
-                  <p>
+                  <p className="text-sm font-light text-center mb-5">
                     {model.title}
                   </p>
               </div>
