@@ -1,8 +1,19 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import ModelView from "./ModelView"
+import { useState } from "react"
+import {yellowImg} from '../utils'
 
 
 const Model = () => {
+  const [size, setSize] = useState('small')
+  const [model, setModel] = useState({
+    title:'iPhone 15 Pro in Natural Titanium',
+    color:['#8F8A81','#FFE789','#6F6C64'],
+    img: yellowImg,
+  })
+
+  //camera control for the model view
 
   useGSAP(()=>{
       gsap.to('#heading',{
@@ -19,7 +30,7 @@ const Model = () => {
           <div className="flex flex-col items-center mt-5">
               <div className="w-full h-[75vh] md:h-[90vh]
               overflow-hidden relative">
-
+                  <ModelView/>
               </div>
           </div>
        </div>
