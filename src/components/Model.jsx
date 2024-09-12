@@ -73,6 +73,7 @@ const Model = () => {
                     right:0,
                     overflow:'hidden'
                   }}
+                  eventSource={document.getElementById('root')}
                   >
 
                     <View.Port/>
