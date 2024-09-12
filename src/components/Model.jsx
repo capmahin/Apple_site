@@ -79,6 +79,12 @@ const Model = () => {
                     <View.Port/>
                   </Canvas>
               </div>
+
+              <div className="mx-auto w-full">
+                  <p>
+                    {model.title}
+                  </p>
+              </div>
           </div>
        </div>
     </section>
