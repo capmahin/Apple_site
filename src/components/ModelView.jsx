@@ -1,4 +1,4 @@
-import { View } from "@react-three/drei"
+import { PerspectiveCamera, View } from "@react-three/drei"
 
 
 const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
@@ -13,6 +13,8 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
     >
          {/* Ambient Light */}
          <ambientLight intensity={0.3}/>
+
+         <PerspectiveCamera/>
     </View>
   )
 }
