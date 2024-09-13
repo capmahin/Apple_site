@@ -6,4 +6,21 @@ export const animateWithGsapTimeline =(timeline,rotationRef,
         duration:1,
         ease:'power2.inOut'
     })
+
+    timeline.to(
+        firstTarget,
+        {
+            ...animationProps,
+            ease:'power2.inOut'
+        },
+        '<'
+    )
+    timeline.to(
+        firstTarget,
+        {
+            ...animationProps,
+            ease:'power2.inOut'
+        },
+        '<'
+    )
 }
