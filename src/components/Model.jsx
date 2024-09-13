@@ -102,7 +102,8 @@ const Model = () => {
                         style={{backgroundColor:size === value ? 'white':
                           'transparent', color: size === value ? 'black':
                           'white'
-                        }}>
+                        }}
+                        onClick={()=> setSize(value)}>
                           {label}
                         </span>
                       ))}
