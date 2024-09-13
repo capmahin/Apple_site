@@ -21,13 +21,15 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
          <Lights/>
 
 
-         <OrbitControls>
-          
-         </OrbitControls>
-
-         <Suspense fallback={<Html><div>Loading</div></Html>}>
+         <OrbitControls/>
+        
+        <group>
+        <Suspense fallback={<Html><div>Loading</div></Html>}>
             <IPhone/>
          </Suspense>
+        </group>
+         
+        
     </View>
   )
 }
