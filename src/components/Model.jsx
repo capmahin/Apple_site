@@ -30,6 +30,8 @@ const Model = () => {
   const [smallRotation, setSmallRotation] = useState(0);
   const [largeRotation, setLargeRotation] = useState(0);
 
+  const tl = gsap.timeline();
+
   useGSAP(()=>{
       gsap.to('#heading',{
         y:0, 
