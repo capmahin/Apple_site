@@ -7,7 +7,7 @@ import { Suspense } from "react"
 import Loader from "./Loader";
 
 
-const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
+const ModelView = ({index, groupRef, gsapType, controlRef, setRotationState
   ,size,item
 }) => {
   return (
