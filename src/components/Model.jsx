@@ -6,7 +6,7 @@ import {yellowImg} from '../utils';
  import * as THREE from 'three';
 import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
-import { models } from './../constants/index';
+import { models, sizes } from './../constants/index';
 
 
 const Model = () => {
@@ -97,7 +97,11 @@ const Model = () => {
                        ))}
                     </ul>
                     <button className="size-btn-container">
-
+                      {sizes.map(({label,value})=>(
+                        <span key={label}>
+                          {label}
+                        </span>
+                      ))}
                     </button>
                   </div>
               </div>
