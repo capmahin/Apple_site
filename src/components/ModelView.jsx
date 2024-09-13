@@ -1,4 +1,6 @@
 import { Html, OrbitControls, PerspectiveCamera, View } from "@react-three/drei"
+
+import * as THREE from 'three'
 import Lights from "./Lights"
 import IPhone from "./IPhone"
 import { Suspense } from "react"
@@ -27,6 +29,7 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
          enableZoom={false}
          enablePan={false}
          rotateSpeed={0.4}
+         target={new THREE}
          
          />
         
