@@ -21,10 +21,17 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
          <Lights/>
 
 
-         <OrbitControls/>
+         <OrbitControls
+         makeDefault
+         ref={controlRef}
+         enableZoom={false}
+         enablePan={false}
+         rotateSpeed={0.4}
+         
+         />
         
         <group ref={groupRef} name={`${index ===1} ?
-        'small' : 'large'` }>
+        'small' : 'large'` } position={[0,0,0]}>
         <Suspense fallback={<Html><div>Loading</div></Html>}>
             <IPhone/>
          </Suspense>
