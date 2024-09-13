@@ -1,7 +1,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
 import ModelView from "./ModelView"
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import {yellowImg} from '../utils';
  import * as THREE from 'three';
 import { Canvas } from "@react-three/fiber";
@@ -31,6 +31,10 @@ const Model = () => {
   const [largeRotation, setLargeRotation] = useState(0);
 
   const tl = gsap.timeline();
+
+  useEffect(()=>{
+    
+  },[])
 
   useGSAP(()=>{
       gsap.to('#heading',{
