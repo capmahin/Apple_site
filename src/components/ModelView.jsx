@@ -14,7 +14,7 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
          {/* Ambient Light */}
          <ambientLight intensity={0.3}/>
 
-         <PerspectiveCamera/>
+         <PerspectiveCamera makeDefault position={[0,0,4]}/>
     </View>
   )
 }
