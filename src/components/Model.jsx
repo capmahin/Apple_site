@@ -33,8 +33,13 @@ const Model = () => {
   const tl = gsap.timeline();
 
   useEffect(()=>{
-    
-  },[])
+    if(size === 'large'){
+
+    }
+    if(size === 'small'){
+      
+    }
+  },[size])
 
   useGSAP(()=>{
       gsap.to('#heading',{
