@@ -1,7 +1,7 @@
 import { PerspectiveCamera, View } from "@react-three/drei"
 import Lights from "./Lights"
+import IPhone from "./IPhone"
 import { Suspense } from "react"
-import IPhone from './IPhone'
 
 
 const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
@@ -20,7 +20,7 @@ const ModelView = ({index, groupRef, gsapType, controlRef, setRotaionSize
          <PerspectiveCamera makeDefault position={[0,0,4]}/>
          <Lights/>
 
-         <Suspense fallback={<div>Loading</div>}>
+         <Suspense >
             <IPhone/>
          </Suspense>
     </View>
