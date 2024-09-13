@@ -6,6 +6,7 @@ import {yellowImg} from '../utils';
  import * as THREE from 'three';
 import { Canvas } from "@react-three/fiber";
 import { View } from "@react-three/drei";
+import { models } from './../constants/index';
 
 
 const Model = () => {
@@ -86,7 +87,14 @@ const Model = () => {
                   </p>
                   <div className="flex-center">
                     <ul className="color-container">
+                       {models.map((item,i)=>(
+                        <li key={i} className="w-6 h-6 rounded-full
+                        mx-2 cursor-pointer"
+                        style={{backgroundColor:item.color[0]}}
+                        onClick={()=> setModel(item)}>
 
+                        </li>
+                       ))}
                     </ul>
                   </div>
               </div>
