@@ -2,7 +2,10 @@ import React from 'react'
 
 const Features = () => {
   return (
-    <div>Features</div>
+   <section className='h-full common-padding bg-zinc
+   relative overflow-hidden'>
+
+   </section>
   )
 }
 
