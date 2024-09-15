@@ -21,7 +21,9 @@ const Features = () => {
           </h1>
         </div>
         <div className='flex flex-col justify-center items-center overflow-hidden'>
+           <div className='mt-32 mb-24 pl-24'>
 
+           </div>
         </div>
      </div>
    </section>
