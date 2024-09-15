@@ -1,6 +1,7 @@
 import { useGSAP } from '@gsap/react'
 import React from 'react'
 import { animateWithGsap } from '../utils/animations'
+import { explore1Img, explore2Img, exploreVideo } from '../utils';
 
 const Features = () => {
   useGSAP(()=>{
@@ -34,7 +35,9 @@ const Features = () => {
            <div className='flex-center flex-col sm:px-10'>
               <div className='relative h-[50vh] w-full
               flex items-center'>
-
+                <video>
+                  <source src={exploreVideo}/>
+                </video>
               </div>
            </div>
         </div>
