@@ -31,6 +31,9 @@ const Features = () => {
               Forged in titanium.
              </h2>
            </div>
+           <div className='flex-center flex-col sm:px-10'>
+
+           </div>
         </div>
      </div>
    </section>
