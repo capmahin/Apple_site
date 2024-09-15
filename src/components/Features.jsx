@@ -4,7 +4,7 @@ import { animateWithGsap } from '../utils/animations'
 
 const Features = () => {
   useGSAP(()=>{
-    animateWithGsap('features_title',
+    animateWithGsap('#features_title',
       {y:0, opacity:1})
   },[]);
 
