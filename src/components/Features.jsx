@@ -20,6 +20,9 @@ const Features = () => {
              Explore the full story.
           </h1>
         </div>
+        <div className='flex flex-col justify-center items-center overflow-hidden'>
+
+        </div>
      </div>
    </section>
   )
