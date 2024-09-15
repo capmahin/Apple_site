@@ -4,8 +4,9 @@ import { animateWithGsap } from '../utils/animations'
 
 const Features = () => {
   useGSAP(()=>{
-    animateWithGsap('')
-  },[])
+    animateWithGsap('features_title',
+      {y:0, opacity:1})
+  },[]);
 
 
 
@@ -14,7 +15,7 @@ const Features = () => {
    relative overflow-hidden'>
      <div className='screen-max-width'>
         <div className='mb-12 w-full'>
-          <h1 id='features_title'
+          <h1 id="features_title"
           className='section-heading'>
              Explore the full story.
           </h1>
