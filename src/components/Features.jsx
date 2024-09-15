@@ -1,6 +1,13 @@
+import { useGSAP } from '@gsap/react'
 import React from 'react'
 
 const Features = () => {
+  useGSAP(()=>{
+    
+  },[])
+
+
+
   return (
    <section className='h-full common-padding bg-zinc
    relative overflow-hidden'>
