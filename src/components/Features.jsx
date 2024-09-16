@@ -59,6 +59,10 @@ const Features = () => {
                        className='feature-video g_grow'/>
                     </div>
                  </div>
+
+                 <div className='feature-text-container'>
+
+                 </div>
               </div>
            </div>
         </div>
