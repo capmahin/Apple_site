@@ -44,7 +44,9 @@ const Features = () => {
                 </video>
               </div>
               <div className='flex flex-col w-full relative'>
+                 <div className='feature-video-container'>
 
+                 </div>
               </div>
            </div>
         </div>
