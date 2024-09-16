@@ -47,7 +47,8 @@ const Features = () => {
                  <div className='feature-video-container'>
                     <div className='overflow-hidden flex-1
                     h-[50vh]'>
-
+                       <img src={explore1Img} alt="titanium" 
+                       className='feature-video g_grow'/>
                     </div>
                  </div>
               </div>
