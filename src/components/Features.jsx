@@ -43,6 +43,9 @@ const Features = () => {
                   <source src={exploreVideo} type='video/mp4'/>
                 </video>
               </div>
+              <div className='flex flex-col w-full relative'>
+
+              </div>
            </div>
         </div>
      </div>
