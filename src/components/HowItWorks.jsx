@@ -26,7 +26,9 @@ const HowItWorks = () => {
           </div>
 
           <div className='flex flex-col items-center'>
+             <h2 className='hiw-title'>
 
+             </h2>
           </div>
        </div>
     </section>
