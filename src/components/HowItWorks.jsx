@@ -10,7 +10,10 @@ const HowItWorks = () => {
             trigger:'#chip',
             start:'20% bottom'
          },
-         
+         opacity:0,
+         scale:2,
+         duration:2,
+         ease:'power2.inOut'
       })
     },[])
   return (
