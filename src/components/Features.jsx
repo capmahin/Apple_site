@@ -64,6 +64,10 @@ const Features = () => {
                     <div className='flex-1 flex-center'>
                         <p className='feature-text g_text'>
                            iPhone 15 Pro is {' '}
+                           <span>
+                              the first iPhone to feature an 
+                              aerospace-grade titanium design 
+                           </span>
                         </p> 
                     </div>
                  </div>
