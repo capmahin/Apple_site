@@ -38,7 +38,9 @@ const HowItWorks = () => {
           </div>
 
           <div className='mt-10 md:mt-20 mb-14'>
+              <div className='relative h-full flex-center'>
 
+              </div>
           </div>
        </div>
     </section>
