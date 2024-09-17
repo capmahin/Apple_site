@@ -1,7 +1,11 @@
 import React from 'react'
 import { chipImg } from '../utils'
+import { useGSAP } from '@gsap/react'
 
 const HowItWorks = () => {
+    useGSAP(()=>{
+      
+    },[])
   return (
     
     <section className='common-padding'>
