@@ -2,7 +2,10 @@ import React from 'react'
 
 const HowItWorks = () => {
   return (
-    <div>HowItWorks</div>
+    
+    <section className='common-padding'>
+
+    </section>
   )
 }
 
