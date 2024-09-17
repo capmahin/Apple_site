@@ -6,6 +6,7 @@ import gsap from 'gsap'
 const HowItWorks = () => {
 
    const videoRef = useRef();
+
     useGSAP(()=>{
       gsap.from('#chip',{
          scrollTrigger:{
@@ -54,6 +55,9 @@ const HowItWorks = () => {
                          </video>
                       </div>
               </div>
+              <p className='text-gray font-semibold text-center mt-3'>
+               Honkai: Star Rail
+              </p>
           </div>
        </div>
     </section>
