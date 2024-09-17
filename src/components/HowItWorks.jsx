@@ -24,6 +24,10 @@ const HowItWorks = () => {
              <img src={chipImg} alt="chip"
              width={180} height={180} />
           </div>
+
+          <div className='flex flex-col items-center'>
+
+          </div>
        </div>
     </section>
   )
