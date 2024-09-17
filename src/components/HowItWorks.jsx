@@ -1,5 +1,5 @@
 import React from 'react'
-import { chipImg, frameImg } from '../utils'
+import { chipImg, frameImg, frameVideo } from '../utils'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -43,6 +43,11 @@ const HowItWorks = () => {
                       <img src={frameImg} alt="frame" 
                       className='bg-transparent relative z-10'
                       />
+                      <div className='hiw-video'>
+                         <video>
+                           <source src={frameVideo} type='video/mp4'/>
+                         </video>
+                      </div>
                    </div>
               </div>
           </div>
