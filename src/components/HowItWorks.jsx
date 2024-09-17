@@ -36,6 +36,10 @@ const HowItWorks = () => {
                  history of Apple GPUs.
              </p> 
           </div>
+
+          <div className='mt-10 md:mt-20 mb-14'>
+
+          </div>
        </div>
     </section>
   )
