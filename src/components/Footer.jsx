@@ -7,7 +7,10 @@ const Footer = () => {
     <div className='screen-max-width'>
         <div>
           <p className='font-semibold text-gray text-xs'>
-            More ways to shop
+            More ways to shop:
+            <span className='underline text-blue'>
+               
+            </span>
           </p>
         </div>
     </div>
